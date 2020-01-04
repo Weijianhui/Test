@@ -28,7 +28,7 @@ pipeline {
 
           }
           steps {
-            sh 'echo \'gaga\''
+            sh 'echo "gaga"'
           }
         }
 
