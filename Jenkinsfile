@@ -20,7 +20,13 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
+          agent {
+            node {
+              label 'master'
+            }
+
+          }
           steps {
             sh 'echo \'gaga\''
           }
@@ -29,7 +35,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
         echo 'hehe'
       }
